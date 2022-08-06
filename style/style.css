@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
 }
 .navbar{
-    background-color: #1a1a1a;
+    background-color: #e52626;
     padding: 20px 0;
     width: 100%;
     position: fixed;
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn{
     color: white;
-    background-color: #3f87f5;
+    background-color: #e52626;
     border: none;
     padding: 12px 30px;
     border-radius: 40px;
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-box {
     width: 100%;
     flex-direction: column;
-    text-align: left;
+    text-align:center;
 }
 
 .features{
