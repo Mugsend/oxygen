@@ -105,7 +105,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     .links {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
+        margin-right: 50px;
     }
     .navbar .container{
         justify-content: space-evenly;
@@ -198,6 +199,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 }
+.online-class {
+    text-align: center;
+}
+.online-class *{
+    margin-top:30px ;
+}
 .services{
     display: flex;
     flex-wrap: wrap;
@@ -216,10 +223,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-box p{
     color: #727272;
-}
-.service-box span{
-    color: #3f87f5;
-    font-size: 40px;
 }
 @media (max-width: 800px){
     .service{
@@ -259,109 +262,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: smaller;
     color:#727272;
 }
-.clients{
-    background-image: url("../images/cartographer.png");
-    color: white;
-    padding: 80px 0;
-    
-}
-.clients-container{ 
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    position: relative;
-}
-.client *{
-    transition: all3s;
-    margin-bottom: 10px;
-}
-.client{
-    animation-name: fade;
-    animation-duration: 1.5s;
-    text-align:center;  
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-.client h1{
-    font-size:30px;font-weight:300;
-}
-.client p{
-    font-size:20px; line-height:36px; color: rgb(150, 150, 150);
-}
-.client img{
-    border-radius: 50%;margin: 30px;
-}
-.client-btn{
-    position:absolute;
-    cursor: pointer;
-
-}
-.client-left-btn{
-    left: 0;
-}
-.client-right-btn{
-    right: 0;
-}
-.team{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.teamy{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    text-align: center;
-    margin: 0 20px 40px 20px;
-    padding: 0 20px;
-    background-color: #fafbfc;
-    
-}
-.teamy *{
-    
-    margin: 10px 0;
-}
-.teamy div h2{
-    font-size: 14.4px;
-}
-.teamy img{
-    border-radius: 50%;
-    width: 140px;
-    
-}
-.questions{
-    display: flex;
-    flex-direction: column;
-}
-.questions div{
-    width: 100%;
-}
-.questions div div{
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.questions div div h1{
-    font-weight: 600;
-    font-size: 18px;
-}
-.questions div div p{
-    color: #6c757d;
-    font-size: 14.4px;
-    margin-top: 1rem;
-    line-height: 24px;
-}
-.another-questions{
-    padding-top:80px;
-    text-align: center;
-}
 .service-types{
     text-align: center;
     background-color: white;
@@ -381,7 +281,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px){
 .service-box {
     flex: 0 0 auto;
-    width: 33.33333333%;
 }
 }
 @media (min-width: 576px){
@@ -422,9 +321,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .feature-row .image{
     width: 50%;
-}
-.r{
-    flex-direction: row-reverse;
 }
 .questions div{
     flex: 0 0 auto;
