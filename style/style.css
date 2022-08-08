@@ -12,7 +12,7 @@ body{
     
 }
 section{
-    margin:0;
+    margin-bottom:40px;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 40px;
 }
 .heading-container *{
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
 }
 .heading-container span{
     font-size: 40px;
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 .service-box{
-    padding: 30px;
+    padding: 0px;
     width: 30%;
 }
 .service-box *{
@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     background-color: white;
     margin-bottom:20px;
-    padding: 40px 0;
+    padding: 0px 0;
 }
 .service-types div{
     margin-bottom: 20px;
