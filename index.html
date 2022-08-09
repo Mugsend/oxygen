@@ -11,7 +11,8 @@
 
 </head>
 
-<body>
+<body >
+    <div id="div">
     <nav class="navbar">
         <div class="container" >
             
@@ -44,7 +45,7 @@
             <a href="#bootcamp"><button class="center-btn btn">read more</button></a>
         </div>
         </div>
-    </div>
+
     </section>
     <section id="bootcamp">
         <div class="container">
@@ -98,7 +99,7 @@
                             </h1>
                             <p>Complete Python Begginners course.</p>
                         </div>
-                       <button class="btn">join now</button>
+                       <button class="btn" onclick="show()">join now</button>
                     </div>
                 </div>
                 <div class="service-box">
@@ -115,7 +116,7 @@
                             </h1>
                             <p>HTML5 CSS Javascript.</p>
                         </div>
-                       <button class="btn">join now</button>
+                       <button class="btn" onclick="show()">join now</button>
                     </div>
                 </div>
                 <div class="service-box">
@@ -132,7 +133,7 @@
                             </h1>
                             <p>Python + WebDev.</p>
                         </div>
-                       <button class="btn">join now</button>
+                       <button class="btn" onclick="show()">join now</button>
                     </div>
                 </div>
 
@@ -173,10 +174,40 @@
                 <div>
                     <h1>Experienced and Qualified team</h1>
                     <p class="mute">Our dedicated and lenient staff really know their job and provide output like no other with impeccable quality.</p>
-                    <button class="btn s-btn">Lets Connect</button>
+                    <button class="btn s-btn" onclick="show()">Lets Connect</button>
                 </div>
             </div>
         </div>
-        </div>
+        
     </section>
+</div>
+    <div id="fo" name='form-overlay' class="form-overlay" onclick="hide()"></div>
+    <form action="" name="form">
+        <label for="">Full Name</label>
+        <input type="text">
+        <label for="">Mobile</label>
+        <input type="text">
+        <label for="">Course</label>
+        <input type="radio" name="course">
+        <input type="radio" name="course">
+        <input type="radio" name="course">
+        <input type="submit" value="Register">
+    </form>
+    
+</body>
+    
+    <script>
+        function show(){
+            document.form.style.display='inline-block';
+            document.getElementById('div').style.filter='blur(8px)';
+            document.getElementById('fo').style.display="block";
+            document.form.style.top="50%";
+            document.form.style.filter='blur(0px)';
+        }
+        function hide(){
+            document.form.style.top="-50%";
+            document.getElementById('fo').style.display="none";
+            document.getElementById('div').style.filter='none';
+        }
+    </script>
 </html>
