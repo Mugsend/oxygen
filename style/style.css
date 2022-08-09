@@ -337,6 +337,7 @@ form{
     background-color: rgb(255, 24, 24);
     font-size: 22px;
     color: white;
+    
     filter: blur(8px);
 }
 form input{
@@ -345,10 +346,9 @@ form input{
     margin-bottom: 10px;
     font-size: 18px;
     padding: 4px;
+    background-color: white;
 }
-form input :active{
-    border: none;
-}
+
 .form-overlay{
     position: absolute;
     position: fixed;
