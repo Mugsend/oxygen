@@ -183,16 +183,16 @@
 </div>
     <div id="fo" name='form-overlay' class="form-overlay" onclick="hide()"></div>
     <form action="" name="form">
-        <label for="">Full Name <input type="text"></label>
-        <label for="">Mobile <input type="text"></label>
-        Course <br>
-        <label class="radio"  for="">Python<input type="radio" checked="checked" name="course">
+        <label>Full Name<span style="font-size: 15px;color: yellow;" id="name"></span><input name="name" type="text"></label>
+        <label>Mobile<span style="font-size: 15px;color: yellow;" id="mobile"></span><input name="mobile" type="text"></label>
+        
+        <label class="radio" >Python<input type="radio" checked="checked" name="course" value="python">
             <span class="checkmark"></span></label>
-        <label class="radio" for="">Web Dev<input type="radio" name="course">
+        <label class="radio" >Web Dev<input type="radio" name="course" value="web">
             <span class="checkmark"></span></label>
-        <label class="radio" for="">Bundle<input type="radio" name="course">
+        <label class="radio">Bundle<input type="radio" name="course">
             <span class="checkmark"></span></label>
-            <input type="submit" value="Register">
+            <input type="submit" value="Register" value="bundle">
     </form>
     
 </body>
@@ -209,6 +209,20 @@
             document.form.style.top="-50%";
             document.getElementById('fo').style.display="none";
             document.getElementById('div').style.filter='none';
+        }
+        form.addEventListener('submit',submitfunc);
+        function submitfunc(){
+            if (document.form.name.value==""){
+                document.getElementById('name').innerHTML=" *Required";
+                event.preventDefault();
+            }
+            if (document.form.mobile.value==""){
+                document.getElementById('mobile').innerHTML=" *Required";
+                event.preventDefault();
+            }
+            else{
+                alert("You have registered successfully!"); 
+            }
         }
     </script>
 </html>

@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 section{
     margin-bottom:40px;
@@ -336,7 +336,6 @@ form{
     background-color: rgb(255, 24, 24);
     font-size: 22px;
     color: white;
-    
     filter: blur(8px);
 }
 form input{
@@ -346,6 +345,7 @@ form input{
     font-size: 18px;
     padding: 4px;
     background-color: white;
+    border: none;
 }
 
 .form-overlay{
@@ -374,10 +374,6 @@ form input{
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   .radio input {
     position: absolute;
