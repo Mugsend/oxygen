@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Mulish:wght@400;600;700&display=swap");
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Mulish", sans-serif;
     overflow-x: hidden;
@@ -336,7 +339,6 @@ form{
     background-color: rgb(255, 24, 24);
     font-size: 22px;
     color: white;
-    filter: blur(8px);
 }
 form input{
     height: 30px;
