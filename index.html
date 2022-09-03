@@ -95,7 +95,7 @@
                     <div class="service-types">
                         <div>
                             <h1>
-                             15,000/-
+                             25,000/-
                             </h1>
                             <p>Complete Python Begginners course.</p>
                         </div>
@@ -112,7 +112,7 @@
                     <div class="service-types">
                         <div>
                             <h1>
-                             15,000/-
+                             25,000/-
                             </h1>
                             <p>HTML5 CSS Javascript.</p>
                         </div>
@@ -129,7 +129,7 @@
                     <div class="service-types">
                         <div>
                             <h1>
-                             <span style="color: red; text-decoration:line-through;">30,000/-</span><br>25,000/-
+                             <span style="color: red;">40,000/-</span>
                             </h1>
                             <p>Python + WebDev.</p>
                         </div>
@@ -182,30 +182,27 @@
     </section>
 </div>
     <div id="fo" name='form-overlay' class="form-overlay" onclick="hide()"></div>
-    <form action="" name="form">
-        <label>Full Name<span style="font-size: 15px;color: yellow;" id="name"></span><input name="name" type="text"></label>
-        <label>Mobile<span style="font-size: 15px;color: yellow;" id="mobile"></span><input name="mobile" type="text"></label>
-        
-        <label class="radio" >Python<input type="radio" checked="checked" name="course" value="python">
-            <span class="checkmark"></span></label>
-        <label class="radio" >Web Dev<input type="radio" name="course" value="web">
-            <span class="checkmark"></span></label>
-        <label class="radio">Bundle<input type="radio" name="course">
-            <span class="checkmark"></span></label>
-            <input type="submit" value="Register" value="bundle">
-    </form>
+    
+    <div id="contact">
+        <span class="material-symbols-outlined">
+            phone_in_talk
+            </span>
+        <h3>Contact Now!!</h3>
+        <h2>+91 <span style="color:yellow;">9306365754</span></h2>
+        <h3>Whatsapp or Give us a Call</h3>
+    </div>
     
 </body>
     
     <script>
         function show(){
-            document.form.style.display='inline-block';
+            document.getElementById('contact').style.display='inline-block';
             document.getElementById('div').style.filter='blur(8px)';
             document.getElementById('fo').style.display="block";
-            document.form.style.top="50%";
+            document.getElementById('contact').style.top="50%";
         }
         function hide(){
-            document.form.style.top="-50%";
+            document.getElementById('contact').style.top="-50%";
             document.getElementById('fo').style.display="none";
             document.getElementById('div').style.filter='none';
         }
